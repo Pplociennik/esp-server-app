@@ -36,7 +36,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>pl.esportowapolska/${project.artifactId}:${project.version}</name>
+                        <name>pl.esportowapolska/${project.artifactId}</name>
                     </image>
                 </configuration>
             </plugin>

@@ -36,6 +36,11 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>${version.mssql-jdbc}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.pplociennik.auth</groupId>
+            <artifactId>auth.db</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

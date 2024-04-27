@@ -1,13 +1,13 @@
-package pl.esportowapolska.espserverapp;
+package pl.esportowapolska.core;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EspServerAppApplicationTests {
+class CoreApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

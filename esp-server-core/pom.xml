@@ -6,7 +6,7 @@
         <groupId>pl.esportowapolska</groupId>
         <artifactId>esp-server-app</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>pl.esportowapolska</groupId>
     <artifactId>esp-server-core</artifactId>

@@ -6,12 +6,12 @@
         <groupId>pl.esportowapolska</groupId>
         <artifactId>esp-server-app</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>pl.esportowapolska</groupId>
     <artifactId>esp-server-db</artifactId>
-    <version>${project.parent.version}</version>
-    <name>ee-server-db</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>esp-server-db</name>
     <description>ee-server-db</description>
     <properties>
         <java.version>17</java.version>

@@ -7,7 +7,6 @@
         <groupId>com.github.pplociennik</groupId>
         <artifactId>pp-base</artifactId>
         <version>1.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <modules>

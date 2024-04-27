@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.esportowapolska</groupId>
-    <artifactId>ee-server-db</artifactId>
+    <artifactId>esp-server-db</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ee-server-db</name>
     <description>ee-server-db</description>
@@ -45,12 +45,31 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-maven-plugin</artifactId>
-                <version>${liquibase.version}</version>
-            </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>local_docker_mssql</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.liquibase</groupId>
+                        <artifactId>liquibase-maven-plugin</artifactId>
+                        <version>${liquibase.version}</version>
+                        <configuration>
+                            <propertyFile>.\src\main\resources\liquibase\liquibase_local_docker_mssql.properties
+                            </propertyFile>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+            <activation>
+                <property>
+                    <name>local_docker_mssql</name>
+                </property>
+            </activation>
+        </profile>
+    </profiles>
 
 </project>
